@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>NASA APOD APP</title>
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="bg" class="hero min-h-screen">
+			<div class="hero-overlay bg-opacity-60"></div>
+			<iframe
+				frameborder="0"
+				marginheight="0" 
+				marginwidth="0" 
+				width="100%" 
+				height="100%" 
+				scrolling="auto"
+				allowfullscreen="true" 
+				webkitallowfullscreen="true" 
+				mozallowfullscreen="true">
+			</iframe>
+			<div class="hero-content text-center text-neutral-content">
+			  <div class="max-w-md">
+				<h1 class="mb-5 text-4xl font-bold">NASA Picture of the Day</h1>
+				<input type="date" class="input input-bordered max-w-xs">
+				<button class="btn btn-primary">Go</button>
+				<div class="collapse">
+					<input type="checkbox" /> 
+					<div class="collapse-title text-sm font-medium">
+						Click for description
+					</div>
+					<div class="collapse-content">
+					  <p id="description"></p>
+					</div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<script type="text/javascript" src="main.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>
